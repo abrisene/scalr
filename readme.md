@@ -25,18 +25,21 @@ npm install -s scalr
 
 ### normalize(collection: number[] | NormalObject)
 
+Normalizes an object or an array so that all of the contained values add up to 1.
+
 ```typescript
 normalize([1, 1, 1, 1]);          // => [0.25, 0.25, 0.25, 0.25]
 normalize({ a: 4, b: 4, c: 8 });  // => { a: 0.25, b: 0.25, c: 0.5 }
 ```
 
-Normalizes an object or an array so that all of the contained values add up to 1.
-
 ### scale(collection: number[] | NormalObject, scale = 1)
+
+Normalizes an object or an array so that all of the contained values add up to the unit value of the provided scale.
 
 ```typescript
 scale([1, 1], 3);                 // => [1.5, 1.5]
 scale({ a: 2, b: 8 }, 2);         // => { a: 0.4, b: 1.6 }
 ```
 
-Normalizes an object or an array so that all of the contained values add up to the unit value of the provided scale.
+
+For documentation of underlying methods, please see the [docs](https://abrisene.github.io/scalr/modules.html).
