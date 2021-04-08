@@ -1,6 +1,6 @@
 {
   "name": "scalr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight scaling and normalization utilities.",
   "homepage": "https://github.com/abrisene/scalr#readme",
   "repository": {
