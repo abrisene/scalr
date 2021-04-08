@@ -1,6 +1,7 @@
 ### Node ###
 # Compiled Distribution
 dist/
+lib/
 
 # Logs
 logs

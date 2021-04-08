@@ -10,9 +10,10 @@
   "bugs": {
     "url": "https://github.com/abrisene/scalr/issues"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
+    "/lib",
     "/dist"
   ],
   "license": "Apache-2.0",
