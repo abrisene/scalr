@@ -30,6 +30,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "gts lint",
     "docs": "npx typedoc",
     "clean": "gts clean",
@@ -42,6 +43,7 @@
   "devDependencies": {
     "@types/jest": "26.0.22",
     "@types/node": "14.11.2",
+    "coveralls": "3.1.0",
     "gts": "3.1.0",
     "jest": "26.6.3",
     "ts-jest": "26.5.4",
