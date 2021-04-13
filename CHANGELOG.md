@@ -1,6 +1,15 @@
 # Change Log
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/abrisene/scalr/compare/v1.1.0...v1.1.1) (2021-04-12)
+
+
+### Features
+
+* Updated unit tests to ensure full coverage.
+* Fixed bug with default options in normalization validation function.
+* Fixed issue with validation failure due to floating point comparison.
+* Updated documentation.
 
 <a name="1.1.0"></a>
 ## [1.1.0](https://github.com/abrisene/scalr/compare/v1.0.1...v1.1.0) (2021-04-12)
