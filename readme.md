@@ -1,6 +1,6 @@
 ## scalr [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)  
 
-[![npm version](https://badge.fury.io/js/scalr.svg)](https://badge.fury.io/js/scalr) [![GitHub version](https://badge.fury.io/gh/abrisene%2Fscalr.svg)](https://badge.fury.io/gh/abrisene%2Fscalr) [![Build Status](https://travis-ci.com/abrisene/scalr.svg?branch=main)](https://travis-ci.com/abrisene/scalr)
+[![npm version](https://badge.fury.io/js/scalr.svg)](https://badge.fury.io/js/scalr) [![GitHub version](https://badge.fury.io/gh/abrisene%2Fscalr.svg)](https://badge.fury.io/gh/abrisene%2Fscalr) [![Build Status](https://travis-ci.com/abrisene/scalr.svg?branch=main)](https://travis-ci.com/abrisene/scalr) [![Coverage Status](https://coveralls.io/repos/github/abrisene/scalr/badge.svg?branch=main)](https://coveralls.io/github/abrisene/scalr?branch=main)
 
 Scalr is a lightweight module of pure functions for normalizing and scaling numbers stored within arrays and objects to arbitrary unit lengths.
 

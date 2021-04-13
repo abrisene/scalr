@@ -31,13 +31,13 @@
   "scripts": {
     "test": "jest",
     "lint": "gts lint",
-    "document": "npx typedoc",
+    "docs": "npx typedoc",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
-    "posttest": "npm run lint && npm run document"
+    "posttest": "npm run lint"
   },
   "devDependencies": {
     "@types/jest": "26.0.22",
