@@ -2,6 +2,7 @@
   "name": "scalr",
   "version": "1.0.1",
   "description": "Lightweight scaling and normalization utilities.",
+  "author": "David Robinson <dr@monetise.io> (http://www.monetise.io)",
   "homepage": "https://github.com/abrisene/scalr#readme",
   "repository": {
     "type": "git",
@@ -10,12 +11,6 @@
   "bugs": {
     "url": "https://github.com/abrisene/scalr/issues"
   },
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "/lib",
-    "/dist"
-  ],
   "license": "Apache-2.0",
   "keywords": [
     "scaling",
@@ -27,15 +22,22 @@
     "array",
     "object"
   ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib",
+    "/dist"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "gts lint",
+    "document": "npx typedoc",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint && npm run document"
   },
   "devDependencies": {
     "@types/jest": "26.0.22",

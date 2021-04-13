@@ -14,15 +14,15 @@ import {
   normalizeObject,
   scale,
   normalize,
+  sumArray,
+  sumObject,
+  isScaled,
+  isNormalized,
 } from '..';
 
 /**
  # Constants
  */
-
-const sumArray = (a: number[]) => a.reduce((a, b) => a + b, 0);
-const sumObj = (o: { [key: string]: number }) =>
-  Object.keys(o).reduce((a, b) => a + o[b], 0);
 
 const arrayA = [1, 1, 1];
 const arrayB = [1, 2, 3];
@@ -50,8 +50,8 @@ test('Arrays normalize properly.', () => {
 });
 
 test('Objects normalize properly.', () => {
-  expect(sumObj(objNrmA)).toBeCloseTo(1);
-  expect(sumObj(objNrmB)).toBeCloseTo(1);
+  expect(sumObject(objNrmA)).toBeCloseTo(1);
+  expect(sumObject(objNrmB)).toBeCloseTo(1);
 });
 
 test('Arrays scale properly.', () => {
@@ -59,7 +59,7 @@ test('Arrays scale properly.', () => {
 });
 
 test('Objects scale properly.', () => {
-  expect(sumObj(objScA)).toBeCloseTo(6);
+  expect(sumObject(objScA)).toBeCloseTo(6);
 });
 
 test('Generic normalization works with arbitrary arrays and objects.', () => {
@@ -72,4 +72,22 @@ test('Generic normalization works with arbitrary arrays and objects.', () => {
 test('Generic scaling works with arbitrary arrays and objects.', () => {
   expect(scale(arrayA, 6)).toStrictEqual(arrayScA);
   expect(scale(objA, 6)).toStrictEqual(objScA);
+});
+
+test('Validation functions detect scaled structures properly.', () => {
+  expect(isScaled(scale(arrayA, 6), 6)).toEqual(true);
+  expect(isScaled(scale(arrayB, 25.33), 25.33)).toEqual(true);
+  expect(isScaled(scale(arrayA, 600.5), 600.5)).toEqual(true);
+  expect(isScaled(scale(arrayB, 0.3355), 0.3355)).toEqual(true);
+  expect(isScaled(scale(objA, 6), 6)).toEqual(true);
+  expect(isScaled(scale(objB, 25.33), 25.33)).toEqual(true);
+  expect(isScaled(scale(objA, 600.5), 600.5)).toEqual(true);
+  expect(isScaled(scale(objB, 0.3355), 0.3355)).toEqual(true);
+});
+
+test('Validation functions detect normalized structures properly.', () => {
+  expect(isNormalized(normalize(arrayA))).toEqual(true);
+  expect(isNormalized(normalize(arrayB))).toEqual(true);
+  expect(isNormalized(normalize(objA))).toEqual(true);
+  expect(isNormalized(normalize(objB))).toEqual(true);
 });
