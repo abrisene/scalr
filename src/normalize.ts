@@ -53,7 +53,10 @@ export function isScaledNormalArray(
   scale = 1,
   tolerance = Number.EPSILON
 ): boolean {
-  return Math.abs(scale - sumArray(array)) < tolerance;
+  const sum = sumArray(array);
+  return sum === scale
+    ? true
+    : Math.abs(Math.fround(scale) - Math.fround(sum)) < tolerance;
 }
 
 /**
@@ -66,7 +69,7 @@ export function isNormalizedArray(
   array: number[],
   tolerance = Number.EPSILON
 ): boolean {
-  return isScaledNormalArray(array, tolerance);
+  return isScaledNormalArray(array, 1, tolerance);
 }
 
 /**
