@@ -41,6 +41,15 @@ export function average(collection: ScalableCollection) {
 }
 
 /**
+ * Finds the average of an array or an object of number values.
+ * Identical to average().
+ * @param collection An object or an array containing only number values.
+ */
+export function mean(collection: ScalableCollection) {
+  return average(collection);
+}
+
+/**
  * Finds the standard deviation of an array of numbers.
  * @param array An array of numbers.
  */
@@ -71,6 +80,7 @@ export function standardDeviation(collection: ScalableCollection) {
 
 /**
  * Finds the standard deviation of an array or an object of number values.
+ * Identical to standardDeviation().
  * @param collection An object or an array containing only number values.
  */
 export function stDev(collection: ScalableCollection) {

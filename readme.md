@@ -72,6 +72,78 @@ isScaled([1, 1, 1], 3);           // => TRUE
 isScaled({ a: 0.5, b: 1 }, 2);    // => TRUE
 ```
 
+
+### Math & Statistics
+
+Utility functions are also provided for performing math and statistics operations with objects and arrays.
+
+
+
+#### sum(collection: number[] | { [key: string | number]: number })
+
+Finds the sum of an array or object containing numbers.
+
+```typescript
+sum([1, 1, 1]);                   // => 3
+sum({ a: 0.5, b: 1 });            // => 1.5
+```
+
+
+#### difference(collection: number[] | { [key: string | number]: number })
+
+Finds the difference of an array or object containing numbers.
+The first entry populates the initial value, while any subsequent values are subtracted from that number.
+Objects will have their keys sorted alphabetically before subtraction to ensure consistent order.
+
+```typescript
+difference([3, 5, 1]);             // => 3 - 5 - 1 => -3
+difference({ a: 12, b: 6 });       // => 12 - 6 => 6
+```
+
+
+#### product(collection: number[] | { [key: string | number]: number })
+
+Finds the product of an array or object containing numbers.
+
+```typescript
+product([3, 5, 2]);               // => 3 * 5 * 2 => 30
+product({ a: 12, b: 6 });         // => 12 * 6 => 72
+```
+
+
+#### quotient(collection: number[] | { [key: string | number]: number })
+
+Finds the quotient of an array or object containing numbers.
+The first entry populates the initial value, while any subsequent values are used to divide that number.
+Objects will have their keys sorted alphabetically before subtraction to ensure consistent order.
+
+```typescript
+quotient([20, 5, 2]);             // => 20 / 5 / 2 => 2
+quotient({ a: 12, b: 6 });        // => 12 / 6 => 2
+```
+
+#### average(collection: number[] | { [key: string | number]: number })
+
+Finds the average of an array or an object of number values.
+Can also be called with **mean()**
+
+```typescript
+average([1, 2, 3]);               // => 2
+average({ a: 50, b: 25, c: 15 }); // => 30
+```
+
+
+#### standardDeviation(collection: number[] | { [key: string | number]: number })
+
+Finds the average of an array or an object of number values.
+Can also be called with **stDev()**
+
+```typescript
+standardDeviation([6, 60]);          // => 27
+standardDeviation({ a: 5, b: 10 });  // => 2.5
+```
+
+
 ### Other Functions
 
 For documentation of underlying functions, please see the [docs](https://abrisene.github.io/scalr/modules.html).

@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#average" class="tsd-kind-icon">average</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#averagearray" class="tsd-kind-icon">average<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#averageobject" class="tsd-kind-icon">average<wbr>Object</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#mean" class="tsd-kind-icon">mean</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#stdev" class="tsd-kind-icon">st<wbr>Dev</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#standarddeviation" class="tsd-kind-icon">standard<wbr>Deviation</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="statistics.html#standarddeviationarray" class="tsd-kind-icon">standard<wbr>Deviation<wbr>Array</a></li>
@@ -96,7 +97,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L37">statistics.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L37">statistics.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -127,7 +128,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L21">statistics.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L21">statistics.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -158,7 +159,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L29">statistics.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L29">statistics.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -180,6 +181,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="mean" class="tsd-anchor"></a>
+					<h3>mean</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">mean<span class="tsd-signature-symbol">(</span>collection<span class="tsd-signature-symbol">: </span><a href="main.html#scalablecollection" class="tsd-signature-type" data-tsd-kind="Type alias">ScalableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L48">statistics.ts:48</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds the average of an array or an object of number values.
+									Identical to average().</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>collection: <a href="main.html#scalablecollection" class="tsd-signature-type" data-tsd-kind="Type alias">ScalableCollection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An object or an array containing only number values.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="stdev" class="tsd-anchor"></a>
 					<h3>st<wbr>Dev</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -189,12 +222,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L76">statistics.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L86">statistics.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds the standard deviation of an array or an object of number values.</p>
+									<p>Finds the standard deviation of an array or an object of number values.
+									Identical to standardDeviation().</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -220,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L66">statistics.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L75">statistics.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L47">statistics.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L56">statistics.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -282,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/1db69a9/src/statistics.ts#L58">statistics.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/abrisene/scalr/blob/f6f83bf/src/statistics.ts#L67">statistics.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -335,6 +369,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="statistics.html#averageobject" class="tsd-kind-icon">average<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="statistics.html#mean" class="tsd-kind-icon">mean</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="statistics.html#stdev" class="tsd-kind-icon">st<wbr>Dev</a>

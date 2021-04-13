@@ -115,6 +115,58 @@
 				<pre><code class="language-typescript"><span style="color: #795E26">isScaled</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">], </span><span style="color: #098658">3</span><span style="color: #000000">);           </span><span style="color: #008000">// =&gt; TRUE</span>
 <span style="color: #795E26">isScaled</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">0.5</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, </span><span style="color: #098658">2</span><span style="color: #000000">);    </span><span style="color: #008000">// =&gt; TRUE</span>
 </code></pre>
+				<a href="#math-amp-statistics" id="math-amp-statistics" style="color: inherit; text-decoration: none;">
+					<h3>Math &amp; Statistics</h3>
+				</a>
+				<p>Utility functions are also provided for performing math and statistics operations with objects and arrays.</p>
+				<a href="#sumcollection-number---key-string--number-number-" id="sumcollection-number---key-string--number-number-" style="color: inherit; text-decoration: none;">
+					<h4>sum(collection: number[] | { [key: string | number]: number })</h4>
+				</a>
+				<p>Finds the sum of an array or object containing numbers.</p>
+				<pre><code class="language-typescript"><span style="color: #795E26">sum</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">]);                   </span><span style="color: #008000">// =&gt; 3</span>
+<span style="color: #795E26">sum</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">0.5</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> });            </span><span style="color: #008000">// =&gt; 1.5</span>
+</code></pre>
+				<a href="#differencecollection-number---key-string--number-number-" id="differencecollection-number---key-string--number-number-" style="color: inherit; text-decoration: none;">
+					<h4>difference(collection: number[] | { [key: string | number]: number })</h4>
+				</a>
+				<p>Finds the difference of an array or object containing numbers.
+					The first entry populates the initial value, while any subsequent values are subtracted from that number.
+				Objects will have their keys sorted alphabetically before subtraction to ensure consistent order.</p>
+				<pre><code class="language-typescript"><span style="color: #795E26">difference</span><span style="color: #000000">([</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">]);             </span><span style="color: #008000">// =&gt; 3 - 5 - 1 =&gt; -3</span>
+<span style="color: #795E26">difference</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">6</span><span style="color: #000000"> });       </span><span style="color: #008000">// =&gt; 12 - 6 =&gt; 6</span>
+</code></pre>
+				<a href="#productcollection-number---key-string--number-number-" id="productcollection-number---key-string--number-number-" style="color: inherit; text-decoration: none;">
+					<h4>product(collection: number[] | { [key: string | number]: number })</h4>
+				</a>
+				<p>Finds the product of an array or object containing numbers.</p>
+				<pre><code class="language-typescript"><span style="color: #795E26">product</span><span style="color: #000000">([</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]);               </span><span style="color: #008000">// =&gt; 3 * 5 * 2 =&gt; 30</span>
+<span style="color: #795E26">product</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">6</span><span style="color: #000000"> });         </span><span style="color: #008000">// =&gt; 12 * 6 =&gt; 72</span>
+</code></pre>
+				<a href="#quotientcollection-number---key-string--number-number-" id="quotientcollection-number---key-string--number-number-" style="color: inherit; text-decoration: none;">
+					<h4>quotient(collection: number[] | { [key: string | number]: number })</h4>
+				</a>
+				<p>Finds the quotient of an array or object containing numbers.
+					The first entry populates the initial value, while any subsequent values are used to divide that number.
+				Objects will have their keys sorted alphabetically before subtraction to ensure consistent order.</p>
+				<pre><code class="language-typescript"><span style="color: #795E26">quotient</span><span style="color: #000000">([</span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]);             </span><span style="color: #008000">// =&gt; 20 / 5 / 2 =&gt; 2</span>
+<span style="color: #795E26">quotient</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">6</span><span style="color: #000000"> });        </span><span style="color: #008000">// =&gt; 12 / 6 =&gt; 2</span>
+</code></pre>
+				<a href="#averagecollection-number---key-string--number-number-" id="averagecollection-number---key-string--number-number-" style="color: inherit; text-decoration: none;">
+					<h4>average(collection: number[] | { [key: string | number]: number })</h4>
+				</a>
+				<p>Finds the average of an array or an object of number values.
+				Can also be called with <strong>mean()</strong></p>
+				<pre><code class="language-typescript"><span style="color: #795E26">average</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);               </span><span style="color: #008000">// =&gt; 2</span>
+<span style="color: #795E26">average</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">25</span><span style="color: #000000">, </span><span style="color: #001080">c:</span><span style="color: #000000"> </span><span style="color: #098658">15</span><span style="color: #000000"> }); </span><span style="color: #008000">// =&gt; 30</span>
+</code></pre>
+				<a href="#standarddeviationcollection-number---key-string--number-number-" id="standarddeviationcollection-number---key-string--number-number-" style="color: inherit; text-decoration: none;">
+					<h4>standardDeviation(collection: number[] | { [key: string | number]: number })</h4>
+				</a>
+				<p>Finds the average of an array or an object of number values.
+				Can also be called with <strong>stDev()</strong></p>
+				<pre><code class="language-typescript"><span style="color: #795E26">standardDeviation</span><span style="color: #000000">([</span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #098658">60</span><span style="color: #000000">]);          </span><span style="color: #008000">// =&gt; 27</span>
+<span style="color: #795E26">standardDeviation</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">10</span><span style="color: #000000"> });  </span><span style="color: #008000">// =&gt; 2.5</span>
+</code></pre>
 				<a href="#other-functions" id="other-functions" style="color: inherit; text-decoration: none;">
 					<h3>Other Functions</h3>
 				</a>
