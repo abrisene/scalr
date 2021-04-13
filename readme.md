@@ -135,7 +135,7 @@ average({ a: 50, b: 25, c: 15 }); // => 30
 
 #### standardDeviation(collection: number[] | { [key: string | number]: number })
 
-Finds the average of an array or an object of number values.
+Finds the standard deviation of an array or an object of number values.
 Can also be called with **stDev()**
 
 ```typescript
