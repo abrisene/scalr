@@ -1,6 +1,15 @@
 # Change Log
 
 <a name="1.1.1"></a>
+## [1.1.2](https://github.com/abrisene/scalr/compare/v1.1.1...v1.1.2) (2021-04-12)
+
+
+### Features
+
+* Fixed issue preventing main types from being included in the npm distributable. Switched from global style type declaration (main.d.ts) to modular type definitions (types.ts).
+* Fixed typoes in developer-facing source comments.
+
+<a name="1.1.1"></a>
 ## [1.1.1](https://github.com/abrisene/scalr/compare/v1.1.0...v1.1.1) (2021-04-12)
 
 
