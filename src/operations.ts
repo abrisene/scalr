@@ -7,8 +7,10 @@
  # Module Dependencies
  */
 
+import { ScalableObject, ScalableCollection } from './types';
+
 /**
- # Methods
+ # Functions
  */
 
 /**

@@ -7,6 +7,7 @@
  # Module Dependencies
  */
 
+import { ScalableObject, ScalableCollection } from './types';
 import { sumArray, sumObject } from './operations';
 
 /**
@@ -16,7 +17,7 @@ import { sumArray, sumObject } from './operations';
 // type NormalObject = { [key: string]: number } & { [key: number]: number };
 
 /**
- # Methods
+ # Functions
  */
 
 /**

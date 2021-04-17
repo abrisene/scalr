@@ -10,3 +10,4 @@
 export * from './normalize';
 export * from './operations';
 export * from './statistics';
+export * from './types';
