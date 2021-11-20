@@ -18,7 +18,7 @@ import { ScalableObject, ScalableCollection } from './types';
  * @param array An array of numbers.
  */
 export function sumArray(array: number[]) {
-  return array.reduce((a, b) => a + b);
+  return array.reduce((a, b) => a + b, 0);
 }
 
 /**
@@ -45,7 +45,7 @@ export function sum(collection: ScalableCollection) {
  * @param array An array of numbers.
  */
 export function differenceArray(array: number[]) {
-  return array.reduce((a, b) => a - b);
+  return array.reduce((a, b, i) => (i === 0 ? b : a - b), 0);
 }
 
 /**
@@ -76,7 +76,7 @@ export function difference(collection: ScalableCollection) {
  * @param array An array of numbers.
  */
 export function productArray(array: number[]) {
-  return array.reduce((a, b) => a * b);
+  return array.reduce((a, b) => a * b, 1);
 }
 
 /**
@@ -102,7 +102,7 @@ export function product(collection: ScalableCollection) {
  * @param array An array of numbers.
  */
 export function quotientArray(array: number[]) {
-  return array.reduce((a, b) => a / b);
+  return array.reduce((a, b, i) => (i === 0 ? b : a / b), 0);
 }
 
 /**

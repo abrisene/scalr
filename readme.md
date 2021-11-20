@@ -1,6 +1,6 @@
-## scalr [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)  
+## scalr
 
-[![npm version](https://badge.fury.io/js/scalr.svg)](https://badge.fury.io/js/scalr) [![GitHub version](https://badge.fury.io/gh/abrisene%2Fscalr.svg)](https://badge.fury.io/gh/abrisene%2Fscalr) [![Build Status](https://travis-ci.com/abrisene/scalr.svg?branch=main)](https://travis-ci.com/abrisene/scalr) [![Coverage Status](https://coveralls.io/repos/github/abrisene/scalr/badge.svg?branch=main)](https://coveralls.io/github/abrisene/scalr?branch=main)
+[![npm version](https://badge.fury.io/js/scalr.svg)](https://badge.fury.io/js/scalr) [![GitHub version](https://badge.fury.io/gh/abrisene%2Fscalr.svg)](https://badge.fury.io/gh/abrisene%2Fscalr) [![Build Status](https://travis-ci.com/abrisene/scalr.svg?branch=main)](https://travis-ci.com/abrisene/scalr) [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable) [![Coverage Status](https://coveralls.io/repos/github/abrisene/scalr/badge.svg?branch=main)](https://coveralls.io/github/abrisene/scalr?branch=main)
 
 Scalr is a lightweight module of pure functions for normalizing and scaling numbers stored within arrays and objects to arbitrary unit lengths.
 
@@ -56,7 +56,7 @@ Because we're working with floating point numbers, these validation methods need
 
 #### isNormalized(collection: number[] | { [key: string | number]: number }, tolerance = Number.EPSILON)
 
-Validates whether or not an array or object of values is normalized. 
+Validates whether or not an array or object of values is normalized.
 ```typescript
 isNormalized([0.2, 0.2, 0.2], 3); // => TRUE
 isNormalized({ a: 0.2, b: 0.8 }); // => TRUE
