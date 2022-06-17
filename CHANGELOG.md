@@ -1,8 +1,17 @@
 # Change Log
 
-<a name="1.1.1"></a>
-## [1.1.2](https://github.com/abrisene/scalr/compare/v1.1.1...v1.1.2) (2021-04-12)
+<a name="1.1.4"></a>
 
+## [1.1.4](https://github.com/abrisene/scalr/compare/v1.1.2...v1.1.4) (2022-06-17)
+
+### Features
+
+* Added object merge functions, with support for math, normalization / scaling and statistics.
+* Improved typings to address issues where functions were typing returns as empty dictionaries.
+
+<a name="1.1.2"></a>
+
+## [1.1.2](https://github.com/abrisene/scalr/compare/v1.1.1...v1.1.2) (2021-04-12)
 
 ### Features
 
@@ -10,8 +19,8 @@
 * Fixed typoes in developer-facing source comments.
 
 <a name="1.1.1"></a>
-## [1.1.1](https://github.com/abrisene/scalr/compare/v1.1.0...v1.1.1) (2021-04-12)
 
+## [1.1.1](https://github.com/abrisene/scalr/compare/v1.1.0...v1.1.1) (2021-04-12)
 
 ### Features
 
@@ -21,8 +30,8 @@
 * Updated documentation.
 
 <a name="1.1.0"></a>
-## [1.1.0](https://github.com/abrisene/scalr/compare/v1.0.1...v1.1.0) (2021-04-12)
 
+## [1.1.0](https://github.com/abrisene/scalr/compare/v1.0.1...v1.1.0) (2021-04-12)
 
 ### Features
 
@@ -38,9 +47,11 @@
 * Updated documentation.
 
 <a name="1.0.1"></a>
+
 ## [1.0.1](https://github.com/abrisene/scalr/compare/v1.0.0...v1.0.1) (2021-04-05)
 
 <a name="1.0.0"></a>
+
 # [1.0.0]() (2021-04-06)
 
 ### Features
